@@ -7,6 +7,33 @@ Les fichiers de style Chicago ont été modifiés pour répondre aux besoins sp�
 
 Les règles sont consultables ici : https://bib.umontreal.ca/citer/styles-bibliographiques/chicago 
 
+### Changements (remplacés par : )
+
+- "" : « »
+- and : et
+- title capitalization : leave as entered
+- in : dans
+- edited by : sous la direction de
+- ed. : dir.
+- n<sup>o</sup> : no.
+- translated by : traduit par
+- trans. : trad.
+- 1e ed. : 1e éd.
+- accessed : consulté le
+- updated : mis à jour le
+- interview by : entretien par
+- patent : brevet
+- filed : déposé le
+- issued : délivré le
+- new release : communiqué de presse
+- season : saison
+- episode : épisode
+- aired on : diffusé par
+- review of : compte rendu de 
+- original publication : édition originale
+
+- espaces de ponctuation francisé (espaces avant et après le deux-points par exemple)
+
 ## Zotero et EndNote
 
 Les fichiers ont été codés pour Zotero au format CSL (par Anne Le-Huu Pineault) et pour EndNote X9 ou plus au format ENS (par Pascal Martinolli).
