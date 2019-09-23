@@ -1,13 +1,9 @@
-# chicago17-fr
-Francisation des styles Chicago 17th auteur-date et notes de bas de page (pour Zotero et EndNote)
-
-## Règles propres à l'UdeM
-
-Les fichiers de style Chicago ont été modifiés pour répondre aux besoins spécifiques de francisation syntaxique et de ponctuation de l'Université de Montréal.
+# Chicago Manual of Style 17e édition francisé
+Francisation des styles Chicago 17th auteur-date et notes de bas de page (pour Zotero et EndNote) pour répondre aux besoins spécifiques de francisation syntaxique et de ponctuation de l'Université de Montréal.
 
 Les règles sont consultables ici : https://bib.umontreal.ca/citer/styles-bibliographiques/chicago 
 
-### Changements (remplacés par : )
+## Changements (remplacés par : )
 
 - "" : « »
 - and : et
