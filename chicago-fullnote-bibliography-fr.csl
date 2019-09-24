@@ -13,7 +13,7 @@
     <category citation-format="note"/>
     <category field="generic-base"/>
     <summary>Adaptation française du style "Chicago" (méthode note de bas de page), 17e édition</summary>
-    <updated>2019-04-30T00:00:00+00:00</updated>
+    <updated>2019-09-23T00:00:00+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="fr">
@@ -38,7 +38,7 @@
               <names variable="container-author reviewed-author">
                 <label form="verb-short" text-case="lowercase" suffix=" "/>
                 <name and="text" delimiter=", "/>
-                <et-al font-style="italic"/>
+                <et-al/>
               </names>
             </group>
           </if>
@@ -49,14 +49,14 @@
           <names variable="editor translator" delimiter=", ">
             <label form="short" text-case="lowercase" suffix=" "/>
             <name and="text" delimiter=", "/>
-            <et-al font-style="italic"/>
+            <et-al/>
           </names>
         </if>
         <else>
           <names variable="editor translator" delimiter=", ">
             <label form="verb-short" text-case="lowercase" suffix=" "/>
             <name and="text" delimiter=", "/>
-            <et-al font-style="italic"/>
+            <et-al/>
           </names>
         </else>
       </choose>
@@ -71,7 +71,7 @@
         <names variable="editor translator" delimiter=". ">
           <label form="verb" text-case="capitalize-first" suffix=" "/>
           <name and="text" delimiter=", "/>
-          <et-al font-style="italic"/>
+          <et-al/>
         </names>
       </if>
     </choose>
@@ -87,7 +87,7 @@
                   <names variable="container-author">
                     <label form="verb-short" suffix=" " text-case="lowercase"/>
                     <name and="text" delimiter=", "/>
-                    <et-al font-style="italic"/>
+                    <et-al/>
                   </names>
                 </if>
               </choose>
@@ -99,7 +99,7 @@
                     <names variable="editor translator" delimiter=", ">
                       <label form="verb" suffix=" "/>
                       <name and="text" delimiter=", "/>
-                      <et-al font-style="italic"/>
+                      <et-al/>
                     </names>
                   </group>
                 </if>
@@ -107,7 +107,7 @@
                   <names variable="editor translator" delimiter=", ">
                     <label form="verb" text-case="lowercase" suffix=" "/>
                     <name and="text" delimiter=", "/>
-                    <et-al font-style="italic"/>
+                    <et-al/>
                   </names>
                 </else>
               </choose>
@@ -128,7 +128,7 @@
       <names variable="author">
         <name and="text" delimiter=", " form="long"/>
         <label form="short" prefix=", "/>
-        <et-al font-style="italic"/>
+        <et-al/>
         <substitute>
           <text macro="editor"/>
           <text macro="translator"/>
@@ -141,14 +141,14 @@
     <names variable="editor">
       <name name-as-sort-order="first" and="text" sort-separator=", " delimiter=", " delimiter-precedes-last="always"/>
       <label form="short" prefix=", "/>
-      <et-al font-style="italic"/>
+      <et-al/>
     </names>
   </macro>
   <macro name="translator">
     <names variable="translator">
       <name name-as-sort-order="first" and="text" sort-separator=", " delimiter=", " delimiter-precedes-last="always"/>
       <label form="verb-short" prefix=", "/>
-      <et-al font-style="italic"/>
+      <et-al/>
     </names>
   </macro>
   <macro name="recipient">
@@ -172,7 +172,7 @@
     <group delimiter=". ">
       <names variable="author">
         <name name-as-sort-order="first" and="text" sort-separator=", " delimiter=", " delimiter-precedes-last="always"/>
-        <et-al font-style="italic"/>
+        <et-al/>
         <substitute>
           <text macro="editor"/>
           <text macro="translator"/>
@@ -191,7 +191,7 @@
     <group delimiter=" ">
       <names variable="author">
         <name form="short" and="text" delimiter=", "/>
-        <et-al font-style="italic"/>
+        <et-al/>
         <substitute>
           <names variable="editor"/>
           <names variable="translator"/>
@@ -203,7 +203,7 @@
   <macro name="contributors-sort">
     <names variable="author">
       <name name-as-sort-order="all" and="text" sort-separator=", " delimiter=", " delimiter-precedes-last="always"/>
-      <et-al font-style="italic"/>
+      <et-al/>
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
@@ -707,7 +707,7 @@
   </macro>
   <macro name="originally-published">
     <group delimiter=", ">
-      <group delimiter="&amp;#160;: ">
+      <group delimiter="&#160;: ">
         <text variable="original-publisher-place"/>
         <text variable="original-publisher"/>
       </group>
@@ -744,7 +744,7 @@
         <text variable="event-place"/>
       </else-if>
       <else>
-        <group delimiter="&amp;#160;: ">
+        <group delimiter="&#160;: ">
           <text variable="publisher-place"/>
           <text variable="publisher"/>
         </group>
@@ -836,7 +836,7 @@
       <if type="legal_case" variable="locator" match="all">
         <choose>
           <if locator="page">
-            <group delimiter="&amp;#160;: ">
+            <group delimiter="&#160;: ">
               <number variable="volume"/>
               <text variable="locator"/>
             </group>
@@ -878,7 +878,7 @@
             </group>
           </if>
           <else-if type="book graphic motion_picture report song" match="any">
-            <group delimiter="&amp;#160;: ">
+            <group delimiter="&#160;: ">
               <number variable="volume" form="numeric"/>
               <text variable="locator"/>
             </group>
@@ -955,7 +955,7 @@
           <else>
             <choose>
               <if variable="page">
-                <number variable="volume" suffix="&amp;#160;: "/>
+                <number variable="volume" suffix="&#160;: "/>
                 <text variable="page"/>
               </if>
             </choose>
@@ -1492,7 +1492,7 @@
         </else-if>
         <else>
           <group delimiter=", ">
-            <group delimiter="&amp;#160;: ">
+            <group delimiter="&#160;: ">
               <group delimiter=", ">
                 <group delimiter=" ">
                   <group delimiter=", ">
@@ -1622,7 +1622,7 @@
         </else-if>
         <else>
           <group delimiter=". ">
-            <group delimiter="&amp;#160;: ">
+            <group delimiter="&#160;: ">
               <group delimiter=", ">
                 <group delimiter=" ">
                   <group delimiter=". ">
